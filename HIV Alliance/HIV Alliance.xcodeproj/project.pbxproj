@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A39A982922741D0D0067026D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39A982822741D0D0067026D /* AppDelegate.swift */; };
+		A39A982B22741D0D0067026D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39A982A22741D0D0067026D /* ViewController.swift */; };
+		A39A982E22741D0D0067026D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A39A982C22741D0D0067026D /* Main.storyboard */; };
+		A39A983022741D0E0067026D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A39A982F22741D0E0067026D /* Assets.xcassets */; };
+		A39A983322741D0E0067026D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A39A983122741D0E0067026D /* LaunchScreen.storyboard */; };
+		A39A983E22741D0E0067026D /* HIV_AllianceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39A983D22741D0E0067026D /* HIV_AllianceTests.swift */; };
+		A39A984922741D0E0067026D /* HIV_AllianceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39A984822741D0E0067026D /* HIV_AllianceUITests.swift */; };
+		A39A985C227435500067026D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39A985B227435500067026D /* HomeView.swift */; };
+		A39A985E22743C480067026D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39A985D22743C480067026D /* LoginView.swift */; };
+		A39A986122743FF60067026D /* HistoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A39A986022743FF60067026D /* HistoryView.xib */; };
+		A39A98632274401F0067026D /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39A98622274401F0067026D /* HistoryView.swift */; };
+		A3F9CD32227446470064F401 /* ModifyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F9CD31227446470064F401 /* ModifyView.swift */; };
+		A3F9CD34227446970064F401 /* CompleteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3F9CD33227446970064F401 /* CompleteView.xib */; };
+		A3F9CD36227446A60064F401 /* InProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3F9CD35227446A60064F401 /* InProgressView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A39A983A22741D0E0067026D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A39A981D22741D0D0067026D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A39A982422741D0D0067026D;
+			remoteInfo = "HIV Alliance";
+		};
+		A39A984522741D0E0067026D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A39A981D22741D0D0067026D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A39A982422741D0D0067026D;
+			remoteInfo = "HIV Alliance";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A39A982522741D0D0067026D /* HIV Alliance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HIV Alliance.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A39A982822741D0D0067026D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A39A982A22741D0D0067026D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A39A982D22741D0D0067026D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A39A982F22741D0E0067026D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A39A983222741D0E0067026D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A39A983422741D0E0067026D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A39A983922741D0E0067026D /* HIV AllianceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HIV AllianceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A39A983D22741D0E0067026D /* HIV_AllianceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIV_AllianceTests.swift; sourceTree = "<group>"; };
+		A39A983F22741D0E0067026D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A39A984422741D0E0067026D /* HIV AllianceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HIV AllianceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A39A984822741D0E0067026D /* HIV_AllianceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIV_AllianceUITests.swift; sourceTree = "<group>"; };
+		A39A984A22741D0E0067026D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A39A985B227435500067026D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A39A985D22743C480067026D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A39A986022743FF60067026D /* HistoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryView.xib; sourceTree = "<group>"; };
+		A39A98622274401F0067026D /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		A3F9CD31227446470064F401 /* ModifyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyView.swift; sourceTree = "<group>"; };
+		A3F9CD33227446970064F401 /* CompleteView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompleteView.xib; sourceTree = "<group>"; };
+		A3F9CD35227446A60064F401 /* InProgressView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InProgressView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A39A982222741D0D0067026D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A39A983622741D0E0067026D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A39A984122741D0E0067026D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A39A981C22741D0D0067026D = {
+			isa = PBXGroup;
+			children = (
+				A39A985F22743EEA0067026D /* CustomCell */,
+				A39A985822742CDA0067026D /* View Controller */,
+				A39A982722741D0D0067026D /* HIV Alliance */,
+				A39A983C22741D0E0067026D /* HIV AllianceTests */,
+				A39A984722741D0E0067026D /* HIV AllianceUITests */,
+				A39A982622741D0D0067026D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A39A982622741D0D0067026D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A39A982522741D0D0067026D /* HIV Alliance.app */,
+				A39A983922741D0E0067026D /* HIV AllianceTests.xctest */,
+				A39A984422741D0E0067026D /* HIV AllianceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A39A982722741D0D0067026D /* HIV Alliance */ = {
+			isa = PBXGroup;
+			children = (
+				A39A982822741D0D0067026D /* AppDelegate.swift */,
+				A39A982A22741D0D0067026D /* ViewController.swift */,
+				A39A982C22741D0D0067026D /* Main.storyboard */,
+				A39A982F22741D0E0067026D /* Assets.xcassets */,
+				A39A983122741D0E0067026D /* LaunchScreen.storyboard */,
+				A39A983422741D0E0067026D /* Info.plist */,
+			);
+			path = "HIV Alliance";
+			sourceTree = "<group>";
+		};
+		A39A983C22741D0E0067026D /* HIV AllianceTests */ = {
+			isa = PBXGroup;
+			children = (
+				A39A983D22741D0E0067026D /* HIV_AllianceTests.swift */,
+				A39A983F22741D0E0067026D /* Info.plist */,
+			);
+			path = "HIV AllianceTests";
+			sourceTree = "<group>";
+		};
+		A39A984722741D0E0067026D /* HIV AllianceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A39A984822741D0E0067026D /* HIV_AllianceUITests.swift */,
+				A39A984A22741D0E0067026D /* Info.plist */,
+			);
+			path = "HIV AllianceUITests";
+			sourceTree = "<group>";
+		};
+		A39A985822742CDA0067026D /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A39A985B227435500067026D /* HomeView.swift */,
+				A39A985D22743C480067026D /* LoginView.swift */,
+				A39A98622274401F0067026D /* HistoryView.swift */,
+				A3F9CD31227446470064F401 /* ModifyView.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		A39A985F22743EEA0067026D /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				A39A986022743FF60067026D /* HistoryView.xib */,
+				A3F9CD33227446970064F401 /* CompleteView.xib */,
+				A3F9CD35227446A60064F401 /* InProgressView.xib */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A39A982422741D0D0067026D /* HIV Alliance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A39A984D22741D0E0067026D /* Build configuration list for PBXNativeTarget "HIV Alliance" */;
+			buildPhases = (
+				A39A982122741D0D0067026D /* Sources */,
+				A39A982222741D0D0067026D /* Frameworks */,
+				A39A982322741D0D0067026D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HIV Alliance";
+			productName = "HIV Alliance";
+			productReference = A39A982522741D0D0067026D /* HIV Alliance.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A39A983822741D0E0067026D /* HIV AllianceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A39A985022741D0E0067026D /* Build configuration list for PBXNativeTarget "HIV AllianceTests" */;
+			buildPhases = (
+				A39A983522741D0E0067026D /* Sources */,
+				A39A983622741D0E0067026D /* Frameworks */,
+				A39A983722741D0E0067026D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A39A983B22741D0E0067026D /* PBXTargetDependency */,
+			);
+			name = "HIV AllianceTests";
+			productName = "HIV AllianceTests";
+			productReference = A39A983922741D0E0067026D /* HIV AllianceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A39A984322741D0E0067026D /* HIV AllianceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A39A985322741D0E0067026D /* Build configuration list for PBXNativeTarget "HIV AllianceUITests" */;
+			buildPhases = (
+				A39A984022741D0E0067026D /* Sources */,
+				A39A984122741D0E0067026D /* Frameworks */,
+				A39A984222741D0E0067026D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A39A984622741D0E0067026D /* PBXTargetDependency */,
+			);
+			name = "HIV AllianceUITests";
+			productName = "HIV AllianceUITests";
+			productReference = A39A984422741D0E0067026D /* HIV AllianceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A39A981D22741D0D0067026D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Zhijie Chen";
+				TargetAttributes = {
+					A39A982422741D0D0067026D = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					A39A983822741D0E0067026D = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = A39A982422741D0D0067026D;
+					};
+					A39A984322741D0E0067026D = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = A39A982422741D0D0067026D;
+					};
+				};
+			};
+			buildConfigurationList = A39A982022741D0D0067026D /* Build configuration list for PBXProject "HIV Alliance" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A39A981C22741D0D0067026D;
+			productRefGroup = A39A982622741D0D0067026D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A39A982422741D0D0067026D /* HIV Alliance */,
+				A39A983822741D0E0067026D /* HIV AllianceTests */,
+				A39A984322741D0E0067026D /* HIV AllianceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A39A982322741D0D0067026D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3F9CD34227446970064F401 /* CompleteView.xib in Resources */,
+				A39A983322741D0E0067026D /* LaunchScreen.storyboard in Resources */,
+				A3F9CD36227446A60064F401 /* InProgressView.xib in Resources */,
+				A39A986122743FF60067026D /* HistoryView.xib in Resources */,
+				A39A983022741D0E0067026D /* Assets.xcassets in Resources */,
+				A39A982E22741D0D0067026D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A39A983722741D0E0067026D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A39A984222741D0E0067026D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A39A982122741D0D0067026D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A39A985C227435500067026D /* HomeView.swift in Sources */,
+				A39A982B22741D0D0067026D /* ViewController.swift in Sources */,
+				A3F9CD32227446470064F401 /* ModifyView.swift in Sources */,
+				A39A98632274401F0067026D /* HistoryView.swift in Sources */,
+				A39A985E22743C480067026D /* LoginView.swift in Sources */,
+				A39A982922741D0D0067026D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A39A983522741D0E0067026D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A39A983E22741D0E0067026D /* HIV_AllianceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A39A984022741D0E0067026D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A39A984922741D0E0067026D /* HIV_AllianceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A39A983B22741D0E0067026D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A39A982422741D0D0067026D /* HIV Alliance */;
+			targetProxy = A39A983A22741D0E0067026D /* PBXContainerItemProxy */;
+		};
+		A39A984622741D0E0067026D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A39A982422741D0D0067026D /* HIV Alliance */;
+			targetProxy = A39A984522741D0E0067026D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A39A982C22741D0D0067026D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A39A982D22741D0D0067026D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A39A983122741D0E0067026D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A39A983222741D0E0067026D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A39A984B22741D0E0067026D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A39A984C22741D0E0067026D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A39A984E22741D0E0067026D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JK4JMG8JLN;
+				INFOPLIST_FILE = "HIV Alliance/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "HIV-Alliance.HIV-Alliance";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A39A984F22741D0E0067026D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JK4JMG8JLN;
+				INFOPLIST_FILE = "HIV Alliance/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "HIV-Alliance.HIV-Alliance";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A39A985122741D0E0067026D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JK4JMG8JLN;
+				INFOPLIST_FILE = "HIV AllianceTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "HIV-Alliance.HIV-AllianceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HIV Alliance.app/HIV Alliance";
+			};
+			name = Debug;
+		};
+		A39A985222741D0E0067026D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JK4JMG8JLN;
+				INFOPLIST_FILE = "HIV AllianceTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "HIV-Alliance.HIV-AllianceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HIV Alliance.app/HIV Alliance";
+			};
+			name = Release;
+		};
+		A39A985422741D0E0067026D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JK4JMG8JLN;
+				INFOPLIST_FILE = "HIV AllianceUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "HIV-Alliance.HIV-AllianceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "HIV Alliance";
+			};
+			name = Debug;
+		};
+		A39A985522741D0E0067026D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JK4JMG8JLN;
+				INFOPLIST_FILE = "HIV AllianceUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "HIV-Alliance.HIV-AllianceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "HIV Alliance";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A39A982022741D0D0067026D /* Build configuration list for PBXProject "HIV Alliance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A39A984B22741D0E0067026D /* Debug */,
+				A39A984C22741D0E0067026D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A39A984D22741D0E0067026D /* Build configuration list for PBXNativeTarget "HIV Alliance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A39A984E22741D0E0067026D /* Debug */,
+				A39A984F22741D0E0067026D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A39A985022741D0E0067026D /* Build configuration list for PBXNativeTarget "HIV AllianceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A39A985122741D0E0067026D /* Debug */,
+				A39A985222741D0E0067026D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A39A985322741D0E0067026D /* Build configuration list for PBXNativeTarget "HIV AllianceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A39A985422741D0E0067026D /* Debug */,
+				A39A985522741D0E0067026D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A39A981D22741D0D0067026D /* Project object */;
+}
