@@ -8,7 +8,18 @@
 
 import Foundation
 import UIKit
-
+import DLRadioButton
 class SupplementView : UIViewController, UIScrollViewDelegate{
     
+    @IBOutlet var button:
+        [DLRadioButton]!
+    @IBOutlet weak var Q5text: UITextField!
+    func checkifNext(){
+        
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
 }
+
+

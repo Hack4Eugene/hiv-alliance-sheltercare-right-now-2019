@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C99AB1C22758E21003AC673 /* DLRadioButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C99AB1822758E16003AC673 /* DLRadioButton.framework */; };
+		4C99AB1D22758E28003AC673 /* DLRadioButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C99AB1822758E16003AC673 /* DLRadioButton.framework */; };
+		4C99AB1E22758E28003AC673 /* DLRadioButton.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4C99AB1822758E16003AC673 /* DLRadioButton.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4C99AB23227597EB003AC673 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C99AB22227597EB003AC673 /* ReviewView.swift */; };
 		A30A92E02274F27900580C13 /* StaffInforView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30A92DF2274F27900580C13 /* StaffInforView.swift */; };
 		A30A92E22274F2B500580C13 /* PersonalVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30A92E12274F2B500580C13 /* PersonalVIew.swift */; };
 		A30A92E42274F2C800580C13 /* TestingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30A92E32274F2C800580C13 /* TestingView.swift */; };
@@ -27,6 +31,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4C99AB1722758E16003AC673 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C99AB1122758E16003AC673 /* DLRadioButton.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 634D5B5A1C5D8B0F00A3740D;
+			remoteInfo = DLRadioButton;
+		};
+		4C99AB1922758E16003AC673 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C99AB1122758E16003AC673 /* DLRadioButton.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 636C50241C5D9315008B5C96;
+			remoteInfo = DLRadioButtonTests;
+		};
+		4C99AB1F22758E28003AC673 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C99AB1122758E16003AC673 /* DLRadioButton.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 634D5B591C5D8B0F00A3740D;
+			remoteInfo = DLRadioButton;
+		};
 		A39A983A22741D0E0067026D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A39A981D22741D0D0067026D /* Project object */;
@@ -43,7 +68,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4C99AB2122758E28003AC673 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4C99AB1E22758E28003AC673 /* DLRadioButton.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		4C99AB1122758E16003AC673 /* DLRadioButton.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DLRadioButton.xcodeproj; path = DLRadioButton/DLRadioButton.xcodeproj; sourceTree = "<group>"; };
+		4C99AB22227597EB003AC673 /* ReviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
 		A30A92DF2274F27900580C13 /* StaffInforView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffInforView.swift; sourceTree = "<group>"; };
 		A30A92E12274F2B500580C13 /* PersonalVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalVIew.swift; sourceTree = "<group>"; };
 		A30A92E32274F2C800580C13 /* TestingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingView.swift; sourceTree = "<group>"; };
@@ -75,6 +116,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C99AB1D22758E28003AC673 /* DLRadioButton.framework in Frameworks */,
+				4C99AB1C22758E21003AC673 /* DLRadioButton.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +145,22 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		4C99AB1222758E16003AC673 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C99AB1822758E16003AC673 /* DLRadioButton.framework */,
+				4C99AB1A22758E16003AC673 /* DLRadioButtonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C99AB1B22758E21003AC673 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A39A981C22741D0D0067026D = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +171,8 @@
 				A39A983C22741D0E0067026D /* HIV AllianceTests */,
 				A39A984722741D0E0067026D /* HIV AllianceUITests */,
 				A39A982622741D0D0067026D /* Products */,
+				4C99AB1122758E16003AC673 /* DLRadioButton.xcodeproj */,
+				4C99AB1B22758E21003AC673 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -158,6 +219,7 @@
 		A39A985822742CDA0067026D /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4C99AB22227597EB003AC673 /* ReviewView.swift */,
 				A39A985B227435500067026D /* HomeView.swift */,
 				A39A985D22743C480067026D /* LoginView.swift */,
 				A3F9CD31227446470064F401 /* ModifyView.swift */,
@@ -191,10 +253,12 @@
 				A39A982122741D0D0067026D /* Sources */,
 				A39A982222741D0D0067026D /* Frameworks */,
 				A39A982322741D0D0067026D /* Resources */,
+				4C99AB2122758E28003AC673 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4C99AB2022758E28003AC673 /* PBXTargetDependency */,
 			);
 			name = "HIV Alliance";
 			productName = "HIV Alliance";
@@ -272,6 +336,12 @@
 			mainGroup = A39A981C22741D0D0067026D;
 			productRefGroup = A39A982622741D0D0067026D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4C99AB1222758E16003AC673 /* Products */;
+					ProjectRef = 4C99AB1122758E16003AC673 /* DLRadioButton.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A39A982422741D0D0067026D /* HIV Alliance */,
@@ -280,6 +350,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4C99AB1822758E16003AC673 /* DLRadioButton.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DLRadioButton.framework;
+			remoteRef = 4C99AB1722758E16003AC673 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4C99AB1A22758E16003AC673 /* DLRadioButtonTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DLRadioButtonTests.xctest;
+			remoteRef = 4C99AB1922758E16003AC673 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A39A982322741D0D0067026D /* Resources */ = {
@@ -318,6 +405,7 @@
 				A30A92EA2274F2F600580C13 /* InventoryView.swift in Sources */,
 				A3F9CD402274F02A0064F401 /* HistoryView.swift in Sources */,
 				A3F9CD3C2274C79E0064F401 /* StaffView.swift in Sources */,
+				4C99AB23227597EB003AC673 /* ReviewView.swift in Sources */,
 				A3F9CD32227446470064F401 /* ModifyView.swift in Sources */,
 				A30A92E22274F2B500580C13 /* PersonalVIew.swift in Sources */,
 				A30A92E42274F2C800580C13 /* TestingView.swift in Sources */,
@@ -347,6 +435,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4C99AB2022758E28003AC673 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DLRadioButton;
+			targetProxy = 4C99AB1F22758E28003AC673 /* PBXContainerItemProxy */;
+		};
 		A39A983B22741D0E0067026D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A39A982422741D0D0067026D /* HIV Alliance */;
@@ -501,7 +594,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JK4JMG8JLN;
+				DEVELOPMENT_TEAM = S42AA9W2TB;
 				INFOPLIST_FILE = "HIV Alliance/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -522,7 +615,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JK4JMG8JLN;
+				DEVELOPMENT_TEAM = S42AA9W2TB;
 				INFOPLIST_FILE = "HIV Alliance/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

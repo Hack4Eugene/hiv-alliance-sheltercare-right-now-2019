@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import DLRadioButton
 
 class PersonalVIew : UIViewController, UIScrollViewDelegate,UIPickerViewDelegate,UIPickerViewDataSource{
     
@@ -35,10 +36,11 @@ class PersonalVIew : UIViewController, UIScrollViewDelegate,UIPickerViewDelegate
     }
     
     
-
-    @IBOutlet weak var FemaleButton: UIButton!
-    @IBOutlet weak var MaleButton: UIButton!
-    @IBOutlet weak var IntersexButton: UIButton!
+    @IBOutlet var SexAtBirth : [DLRadioButton]!
+    @IBOutlet var Gender : [DLRadioButton]!
+    @IBOutlet var Homeless : [DLRadioButton]!
+    @IBOutlet var Insurance :[DLRadioButton]!
+    
     
     @IBOutlet weak var Birth: UITextField!
     @IBOutlet weak var CityBorn: UITextField!
@@ -62,20 +64,50 @@ class PersonalVIew : UIViewController, UIScrollViewDelegate,UIPickerViewDelegate
     var Rac:[String] = [String]()
     
     func checkifNext()->Bool{
-        let bir = Birth.text
-        let cityborn = CityBorn.text
-        let letterln = LettersLN.text
-        let nextid = NEXID.text
-        let zip = ZIP.text
+
+        var sexatbirth : String?
+        var gender : String?
+        var homeless : String?
+        var insurance : String?
         
-        if((bir?.isEmpty)! || (cityborn?.isEmpty)! || (letterln?.isEmpty)! || (nextid?.isEmpty)! || (zip?.isEmpty)!){
+        if((Birth.text?.isEmpty)! || (CityBorn.text?.isEmpty)! || (LettersLN.text?.isEmpty)! || (NEXID.text?.isEmpty)! || (ZIP.text?.isEmpty)!){
             resetForm()
             return false
         }
-        data?["birthday"] = bir
-        data?["cityborn"] = cityborn
-        data?["letterln"] = letterln
-        data?["nextid"] = nextid
+        
+        for sex in SexAtBirth{
+            if (sex.isSelected){
+                sexatbirth = sex.currentTitle!
+            }
+        }
+        
+        for GenDer in Gender{
+            if (GenDer.isSelected){
+                gender = GenDer.currentTitle!
+            }
+        }
+        
+        for HL in Homeless{
+            if (HL.isSelected){
+                homeless = HL.currentTitle!
+            }
+        }
+        
+        for insura in Insurance{
+            if (insura.isSelected){
+                insurance = insura.currentTitle!
+            }
+        }
+            
+        data?["birthday"] = Birth.text
+        data?["cityborn"] = CityBorn.text
+        data?["letterln"] = LettersLN.text
+        data?["nexid"] = NEXID.text
+        data?["zip"] = ZIP.text
+        data?["sexatbirth"] = sexatbirth
+        data?["gender"] = gender
+        data?["homeless"] = homeless
+        data?["insurance"] = insurance
         return true
     }
     

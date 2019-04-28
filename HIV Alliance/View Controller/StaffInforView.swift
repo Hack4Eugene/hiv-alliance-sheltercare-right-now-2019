@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-
+import DLRadioButton
 class StaffInforView : UIViewController, UIScrollViewDelegate,UIPickerViewDelegate, UIPickerViewDataSource{
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -23,14 +23,13 @@ class StaffInforView : UIViewController, UIScrollViewDelegate,UIPickerViewDelega
         return CityV
     }
     
+    @IBOutlet var Location : [DLRadioButton]!
     
     @IBOutlet weak var Date: UITextField!
     @IBOutlet weak var City: UIPickerView!
     
     @IBOutlet weak var Initials: UITextField!
-    
-    @IBOutlet weak var OtherLocation: UITextField!
-    
+        
     
     private var CityV : String?
     
@@ -38,18 +37,22 @@ class StaffInforView : UIViewController, UIScrollViewDelegate,UIPickerViewDelega
     var CityData: [String] = [String]()
     
     func checkexisted()->Bool{
-        let DateV = Date.text
-        let Initial = Initials.text
-        let OtherLocate = OtherLocation.text
+
+        var location : String?
         
-        if ((DateV?.isEmpty)! || (Initial?.isEmpty)! || (CityV?.isEmpty)!){
+        if ((Date.text?.isEmpty)! || (Initials.text?.isEmpty)! || (CityV?.isEmpty)!){
             resetForm()
             return false
         }
-        data?["encounterdate"] = DateV
-        data?["initial"] = Initial
-        data?["otherlocation"] = OtherLocate
+        for lo in Location{
+            if (lo.isSelected){
+                location = lo.currentTitle!
+            }
+        }
+        data?["encounterdate"] = Date.text
+        data?["initial"] = Initials.text
         data?["city"] = CityV
+        data?["location"] = location
         return true
     }
     

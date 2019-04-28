@@ -8,8 +8,9 @@
 
 import Foundation
 import UIKit
-
+import DLRadioButton
 class InventoryView : UIViewController, UIScrollViewDelegate{
+    
     @IBOutlet weak var Syringesin: UITextField!
     @IBOutlet weak var SyringesOut: UITextField!
     @IBOutlet weak var Sharps: UITextField!
