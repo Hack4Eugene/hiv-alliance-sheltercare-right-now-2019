@@ -13,13 +13,50 @@ class SupplementView : UIViewController, UIScrollViewDelegate{
     
     @IBOutlet var button:
         [DLRadioButton]!
-    @IBOutlet weak var Q5text: UITextField!
-    func checkifNext(){
+    
+    
+    func checkifNext()->Bool{
+        var supplement : String?
+        for supply in button{
+            if (supply.isSelected){
+                supplement = supply.currentTitle
+                return false
+            }
+        }
+            data?["supplemental"] = supplement
+            return true
+    }
+    
+    @IBAction func Exit(_ sender: Any) {
+        self.navigationController?.popToRootViewController(animated: true)
         
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    func resetForm(){
+        let myAlert = UIAlertController(title: "Attention", message: "All blanks must be filled", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        myAlert.addAction(okAction)
+        self.present(myAlert, animated:true,completion:nil)
     }
+    
+    @IBAction func Next(_ sender: Any) {
+        if(self.checkifNext()){
+            self.performSegue(withIdentifier: "toNext", sender: self)
+        }
+        else{
+            self.resetForm()
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toNext" {
+            let nav = segue.destination as! UINavigationController
+            let viewController = nav.topViewController as!
+            SupplementView
+            viewController.data = data
+        }
+        
+    }
+    var data : Dictionary<String,Any>?
 }
 
 

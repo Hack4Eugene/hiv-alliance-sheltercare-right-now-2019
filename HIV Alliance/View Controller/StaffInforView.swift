@@ -57,7 +57,7 @@ class StaffInforView : UIViewController, UIScrollViewDelegate,UIPickerViewDelega
     }
     
     @IBAction func Exit(_ sender: Any) {
-        self.performSegue(withIdentifier: "Unwind", sender: self)
+        self.navigationController?.popToRootViewController(animated: true)
         
     }
     

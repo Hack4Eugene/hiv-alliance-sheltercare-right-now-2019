@@ -18,14 +18,48 @@ class InventoryView : UIViewController, UIScrollViewDelegate{
     @IBOutlet weak var Condoms: UITextField!
     @IBOutlet weak var Cottons: UITextField!
     
-    func CheckifFinish(){
+    func checkifNext()->Bool{
+        if ((Syringesin.text?.isEmpty)!||(SyringesOut.text?.isEmpty)!){
+            
+            resetForm()
+            return false
+        }
         
+        data?["syringesin"] = Syringesin.text
+        data?["syringesout"] = SyringesOut.text
+        data?["sharps"] = Sharps.text
+        data?["alcohol"] = Alcohol.text
+        data?["condom"] = Condoms.text
+        data?["cottons"] = Cottons.text
+        return true
+    }
+    func resetForm(){
+        let myAlert = UIAlertController(title: "Attention", message: "All blanks must be filled", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        myAlert.addAction(okAction)
+        self.present(myAlert, animated:true,completion:nil)
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
     @IBAction func Done(_ sender: Any) {
-        CheckifFinish()
+        if(self.checkifNext()){
+            
+        }
+        else{
+            self.resetForm()
+        }
     }
+    @IBAction func Exit(_ sender: Any) {
+        self.navigationController?.popToRootViewController(animated: true)
+        
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDone" {
+            let nav = segue.destination as! UINavigationController
+            let viewController = nav.topViewController as!
+            LastView
+            viewController.data = data
+        }
+        
+    }
+    var data : Dictionary<String,Any>?
 }

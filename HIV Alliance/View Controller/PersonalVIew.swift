@@ -112,7 +112,7 @@ class PersonalVIew : UIViewController, UIScrollViewDelegate,UIPickerViewDelegate
     }
     
     @IBAction func Exit(_ sender: Any) {
-        self.performSegue(withIdentifier: "Unwind", sender: self)
+        self.navigationController?.popToRootViewController(animated: true)
         
     }
     
@@ -136,7 +136,6 @@ class PersonalVIew : UIViewController, UIScrollViewDelegate,UIPickerViewDelegate
             self.resetForm()
         }
     }
-    
     
     func resetForm(){
         let myAlert = UIAlertController(title: "Attention", message: "All blanks must be filled", preferredStyle: .alert)

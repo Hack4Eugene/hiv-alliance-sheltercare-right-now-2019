@@ -386,10 +386,14 @@
                         <viewLayoutGuide key="safeArea" id="EC0-A2-2lq"/>
                     </view>
                     <navigationItem key="navigationItem" title="Supplemental" id="kMT-gx-ovS">
-                        <barButtonItem key="leftBarButtonItem" title="back" id="9pg-hP-GVZ"/>
+                        <barButtonItem key="leftBarButtonItem" title="Exit" id="9pg-hP-GVZ">
+                            <connections>
+                                <action selector="Exit:" destination="08U-fa-zHE" id="NiG-pj-Wzi"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Next" id="H1e-F3-3By">
                             <connections>
-                                <segue destination="nKh-QJ-BED" kind="presentation" id="a4S-Jw-OBi"/>
+                                <action selector="Next:" destination="08U-fa-zHE" id="v5t-fD-0Rs"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -405,6 +409,7 @@
                         <outletCollection property="button" destination="UYB-zY-ffo" collectionClass="NSMutableArray" id="5Hr-J7-eHB"/>
                         <outletCollection property="button" destination="HkM-fD-lW1" collectionClass="NSMutableArray" id="ZTF-WB-3nl"/>
                         <outletCollection property="button" destination="eTX-Z3-bqS" collectionClass="NSMutableArray" id="Oco-Dg-6nD"/>
+                        <segue destination="nKh-QJ-BED" kind="presentation" id="ndj-Xx-jef"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yaO-ux-GCF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1024,11 +1029,14 @@
                         <viewLayoutGuide key="safeArea" id="1v0-zC-Zzj"/>
                     </view>
                     <navigationItem key="navigationItem" title="Inventory Information" id="kIS-dI-A4H">
-                        <barButtonItem key="leftBarButtonItem" title="back" id="fid-mZ-8bb"/>
+                        <barButtonItem key="leftBarButtonItem" title="Exit" id="fid-mZ-8bb">
+                            <connections>
+                                <action selector="Exit:" destination="aM9-2j-fHS" id="BMp-Fd-RQN"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Done" id="kNA-WK-Ih7">
                             <connections>
-                                <action selector="Done:" destination="aM9-2j-fHS" id="4VR-7S-NIf"/>
-                                <segue destination="rbP-Fn-Obk" kind="presentation" id="Z9D-LU-y9n"/>
+                                <action selector="Next:" destination="aM9-2j-fHS" id="5wr-zG-j8b"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1040,6 +1048,7 @@
                         <outlet property="Sharps" destination="yNP-Eq-rfL" id="bpm-Dd-V1L"/>
                         <outlet property="SyringesOut" destination="xUT-N3-Ibg" id="ceu-RF-fNa"/>
                         <outlet property="Syringesin" destination="htL-Pm-O1R" id="Yle-Ps-Dv0"/>
+                        <segue destination="rbP-Fn-Obk" kind="presentation" identifier="toDone" id="vTv-6A-UbL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vmf-VM-Vxp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1638,7 +1647,11 @@
                         <viewLayoutGuide key="safeArea" id="bGE-lH-Huj"/>
                     </view>
                     <navigationItem key="navigationItem" title="Personal Information" id="8rK-FV-hef">
-                        <barButtonItem key="leftBarButtonItem" title="Exit" id="Qfp-rZ-nsi"/>
+                        <barButtonItem key="leftBarButtonItem" title="Exit" id="Qfp-rZ-nsi">
+                            <connections>
+                                <action selector="Exit:" destination="LMG-AU-VD0" id="qrY-bG-FY0"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Next" id="zeP-KD-FX5">
                             <connections>
                                 <action selector="Next:" destination="LMG-AU-VD0" id="L1K-f6-3wr"/>
@@ -1670,7 +1683,7 @@
                         <outletCollection property="Insurance" destination="ENd-TC-oNI" collectionClass="NSMutableArray" id="Db8-YV-NbU"/>
                         <outletCollection property="Insurance" destination="orA-nE-Vg7" collectionClass="NSMutableArray" id="L3q-hC-ddN"/>
                         <outletCollection property="Insurance" destination="uzQ-lc-hu3" collectionClass="NSMutableArray" id="ohg-5I-FPU"/>
-                        <segue destination="8ks-s5-DbL" kind="presentation" id="loE-fT-PgT"/>
+                        <segue destination="8ks-s5-DbL" kind="presentation" identifier="toNext" id="loE-fT-PgT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ELE-Y2-xiB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2016,26 +2029,30 @@
                         <viewLayoutGuide key="safeArea" id="qp8-J3-njj"/>
                     </view>
                     <navigationItem key="navigationItem" title="Tesing Information" id="SzQ-0E-Lir">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="J12-cB-wBG"/>
+                        <barButtonItem key="leftBarButtonItem" title="Exit" id="J12-cB-wBG">
+                            <connections>
+                                <action selector="Exit:" destination="zzH-gx-d0Q" id="gUg-U2-D0E"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Next" id="tLG-40-ppQ">
                             <connections>
                                 <action selector="Next:" destination="zzH-gx-d0Q" id="v4t-nm-SS6"/>
-                                <segue destination="9Qp-cZ-ZQP" kind="presentation" id="5oN-Bn-Vvs"/>
+                                <segue destination="9Qp-cZ-ZQP" kind="presentation" identifier="toNext" id="5oN-Bn-Vvs"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <size key="freeformSize" width="834" height="5000"/>
                     <connections>
-                        <outletCollection property="button" destination="0mS-Zv-8ps" collectionClass="NSMutableArray" id="9xN-Et-jIF"/>
-                        <outletCollection property="button" destination="Ycs-gt-ejh" collectionClass="NSMutableArray" id="TYC-dJ-PGc"/>
-                        <outletCollection property="button" destination="72Q-Id-a3x" collectionClass="NSMutableArray" id="Kde-S0-G0I"/>
-                        <outletCollection property="button" destination="59K-VU-Ve8" collectionClass="NSMutableArray" id="dWr-p7-q8c"/>
-                        <outletCollection property="button" destination="SEp-lV-IZH" collectionClass="NSMutableArray" id="Nr4-1q-gUf"/>
-                        <outletCollection property="button" destination="tA1-DU-m7E" collectionClass="NSMutableArray" id="Y5A-mz-6Tr"/>
-                        <outletCollection property="button" destination="1r4-xO-dej" collectionClass="NSMutableArray" id="VfV-tf-weK"/>
-                        <outletCollection property="button" destination="zQ2-fN-tnD" collectionClass="NSMutableArray" id="7iG-Q6-jJ6"/>
-                        <outletCollection property="button" destination="zJj-Ve-g3o" collectionClass="NSMutableArray" id="rJg-Hr-Z35"/>
-                        <outletCollection property="button" destination="fb2-mk-qaI" collectionClass="NSMutableArray" id="mNN-cC-skm"/>
+                        <outletCollection property="Tests" destination="0mS-Zv-8ps" collectionClass="NSMutableArray" id="Qp3-tY-v6f"/>
+                        <outletCollection property="Tests" destination="59K-VU-Ve8" collectionClass="NSMutableArray" id="QQ6-NA-Uya"/>
+                        <outletCollection property="Tests" destination="Ycs-gt-ejh" collectionClass="NSMutableArray" id="m3T-BX-QkB"/>
+                        <outletCollection property="Tests" destination="72Q-Id-a3x" collectionClass="NSMutableArray" id="Fwy-0j-fug"/>
+                        <outletCollection property="Tests" destination="SEp-lV-IZH" collectionClass="NSMutableArray" id="G7E-ba-6lb"/>
+                        <outletCollection property="Tests" destination="tA1-DU-m7E" collectionClass="NSMutableArray" id="qKU-ER-2zM"/>
+                        <outletCollection property="Tests" destination="1r4-xO-dej" collectionClass="NSMutableArray" id="4ce-xp-aDc"/>
+                        <outletCollection property="Tests" destination="zQ2-fN-tnD" collectionClass="NSMutableArray" id="x79-AS-RTo"/>
+                        <outletCollection property="Tests" destination="zJj-Ve-g3o" collectionClass="NSMutableArray" id="nF0-CU-rTL"/>
+                        <outletCollection property="Tests" destination="fb2-mk-qaI" collectionClass="NSMutableArray" id="lBu-6o-KUf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AyY-ua-iXg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2174,10 +2191,10 @@
             </objects>
             <point key="canvasLocation" x="4790" y="391"/>
         </scene>
-        <!--View Controller-->
+        <!--Last View-->
         <scene sceneID="nbL-S1-Kxl">
             <objects>
-                <viewController id="yYM-NP-cnj" sceneMemberID="viewController">
+                <viewController id="yYM-NP-cnj" customClass="LastView" customModule="HIV_Alliance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IEQ-e6-Xxj">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2203,6 +2220,9 @@
                                 <rect key="frame" x="5" y="583" width="1024" height="55"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <state key="normal" title="Finish"/>
+                                <connections>
+                                    <action selector="Finish:" destination="yYM-NP-cnj" eventType="touchUpInside" id="oOd-Rz-Z6N"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
