@@ -26,13 +26,30 @@ class StaffInforView : UIViewController, UIScrollViewDelegate,UIPickerViewDelega
     
     @IBOutlet weak var Date: UITextField!
     @IBOutlet weak var City: UIPickerView!
+    
+    @IBOutlet weak var Initials: UITextField!
+    
+    @IBOutlet weak var OtherLocation: UITextField!
+    
+    
     private var CityV : String?
+    
+    
     var CityData: [String] = [String]()
     
     func checkexisted()->Bool{
         let DateV = Date.text
-
-//        if (DateV?.isEmpty) Conditional
+        let Initial = Initials.text
+        let OtherLocate = OtherLocation.text
+        
+        if ((DateV?.isEmpty)! || (Initial?.isEmpty)! || (CityV?.isEmpty)!){
+            resetForm()
+            return false
+        }
+        data?["encounterdate"] = DateV
+        data?["initial"] = Initial
+        data?["otherlocation"] = OtherLocate
+        data?["city"] = CityV
         return true
     }
     

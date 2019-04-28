@@ -658,6 +658,8 @@
                     <connections>
                         <outlet property="City" destination="RlH-NC-LeX" id="qmZ-fB-8a1"/>
                         <outlet property="Date" destination="U3t-W1-cV8" id="M4w-5g-c0T"/>
+                        <outlet property="Initials" destination="RSf-85-MPc" id="wfZ-PR-FMt"/>
+                        <outlet property="OtherLocation" destination="iwh-W8-Vdd" id="cER-es-iDN"/>
                         <segue destination="2TX-t5-K7O" kind="presentation" identifier="toNext" id="ibX-KP-feT"/>
                     </connections>
                 </viewController>
@@ -1485,7 +1487,6 @@
                         <barButtonItem key="rightBarButtonItem" title="Next" id="zeP-KD-FX5">
                             <connections>
                                 <action selector="Next:" destination="LMG-AU-VD0" id="L1K-f6-3wr"/>
-                                <segue destination="8ks-s5-DbL" kind="presentation" identifier="toNext" id="7he-KZ-Z10"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1503,6 +1504,7 @@
                         <outlet property="NEXID" destination="V7h-ow-9kX" id="Bxy-XF-l1Y"/>
                         <outlet property="Race" destination="Ao9-AB-mN5" id="pdV-KO-DHb"/>
                         <outlet property="ZIP" destination="bT9-Bu-jym" id="3M7-bh-GZV"/>
+                        <segue destination="8ks-s5-DbL" kind="presentation" id="loE-fT-PgT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ELE-Y2-xiB" userLabel="First Responder" sceneMemberID="firstResponder"/>
