@@ -12,7 +12,6 @@
 		A30A92E42274F2C800580C13 /* TestingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30A92E32274F2C800580C13 /* TestingView.swift */; };
 		A30A92E62274F2D700580C13 /* SupplementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30A92E52274F2D700580C13 /* SupplementView.swift */; };
 		A30A92EA2274F2F600580C13 /* InventoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30A92E92274F2F600580C13 /* InventoryView.swift */; };
-		A30A92EE2275443F00580C13 /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A30A92EC2275443F00580C13 /* DLRadioButton.m */; };
 		A39A982922741D0D0067026D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39A982822741D0D0067026D /* AppDelegate.swift */; };
 		A39A982E22741D0D0067026D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A39A982C22741D0D0067026D /* Main.storyboard */; };
 		A39A983022741D0E0067026D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A39A982F22741D0E0067026D /* Assets.xcassets */; };
@@ -51,8 +50,6 @@
 		A30A92E52274F2D700580C13 /* SupplementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplementView.swift; sourceTree = "<group>"; };
 		A30A92E92274F2F600580C13 /* InventoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryView.swift; sourceTree = "<group>"; };
 		A30A92EB2275443F00580C13 /* HIV Alliance-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HIV Alliance-Bridging-Header.h"; sourceTree = "<group>"; };
-		A30A92EC2275443F00580C13 /* DLRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DLRadioButton.m; path = ../../../DLRadioButton/DLRadioButton/DLRadioButton.m; sourceTree = "<group>"; };
-		A30A92ED2275443F00580C13 /* DLRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DLRadioButton.h; path = ../../../DLRadioButton/DLRadioButton/DLRadioButton.h; sourceTree = "<group>"; };
 		A39A982522741D0D0067026D /* HIV Alliance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HIV Alliance.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A39A982822741D0D0067026D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A39A982D22741D0D0067026D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -98,9 +95,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C99AB0B227554E4003AC673 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		A39A981C22741D0D0067026D = {
 			isa = PBXGroup;
 			children = (
+				4C99AB0B227554E4003AC673 /* Service */,
 				A39A985F22743EEA0067026D /* CustomCell */,
 				A39A985822742CDA0067026D /* View Controller */,
 				A39A982722741D0D0067026D /* HIV Alliance */,
@@ -153,8 +158,6 @@
 		A39A985822742CDA0067026D /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A30A92ED2275443F00580C13 /* DLRadioButton.h */,
-				A30A92EC2275443F00580C13 /* DLRadioButton.m */,
 				A39A985B227435500067026D /* HomeView.swift */,
 				A39A985D22743C480067026D /* LoginView.swift */,
 				A3F9CD31227446470064F401 /* ModifyView.swift */,
@@ -312,7 +315,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A39A985C227435500067026D /* HomeView.swift in Sources */,
-				A30A92EE2275443F00580C13 /* DLRadioButton.m in Sources */,
 				A30A92EA2274F2F600580C13 /* InventoryView.swift in Sources */,
 				A3F9CD402274F02A0064F401 /* HistoryView.swift in Sources */,
 				A3F9CD3C2274C79E0064F401 /* StaffView.swift in Sources */,

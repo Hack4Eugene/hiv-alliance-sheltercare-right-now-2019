@@ -11,6 +11,10 @@ import UIKit
 class StaffView : UIViewController{
     
     @IBOutlet weak var ModifyButton: UIBarButtonItem!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.setRightBarButton(ModifyButton, animated: true)

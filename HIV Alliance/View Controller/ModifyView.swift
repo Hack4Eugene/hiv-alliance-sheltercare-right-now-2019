@@ -6,23 +6,23 @@
 //  Copyright © 2019 Zhijie Chen. All rights reserved.
 //
 
-import Foundation
-import UIKit
-
-class ModifyView : UIViewController, UITableViewDataSource, UITableViewDelegate{
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
-    }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
-    @IBAction func Backbutton(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
-}
+//import Foundation
+//import UIKit
+//
+//class ModifyView : UIViewController, UITableViewDataSource, UITableViewDelegate{
+//
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        <#code#>
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        <#code#>
+//    }
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//    }
+//
+//    @IBAction func Backbutton(_ sender: Any) {
+//        self.dismiss(animated: true, completion: nil)
+//    }
+//}

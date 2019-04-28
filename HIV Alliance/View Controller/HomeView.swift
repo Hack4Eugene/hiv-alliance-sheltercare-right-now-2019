@@ -13,7 +13,9 @@ class HomeView: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+    @IBAction func prepareForUnwind(segue: UIStoryboardSegue) {
+        
+    }
     @IBOutlet weak var survey: UIButton!
     
     @IBOutlet weak var Admin: UIButton!

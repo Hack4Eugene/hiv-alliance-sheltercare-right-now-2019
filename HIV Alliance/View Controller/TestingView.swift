@@ -11,4 +11,15 @@ import UIKit
 
 class TestingView : UIViewController, UIScrollViewDelegate{
     
+    
+    func checkifNext(){
+        
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    @IBAction func Next(_ sender: Any) {
+        checkifNext()
+    }
 }
