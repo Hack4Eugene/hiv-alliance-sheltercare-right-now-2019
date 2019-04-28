@@ -99,15 +99,15 @@ class PersonalVIew : UIViewController, UIScrollViewDelegate,UIPickerViewDelegate
             }
         }
             
-        data?["birthday"] = Birth.text
-        data?["cityborn"] = CityBorn.text
-        data?["letterln"] = LettersLN.text
-        data?["nexid"] = NEXID.text
-        data?["zip"] = ZIP.text
-        data?["sexatbirth"] = sexatbirth
-        data?["gender"] = gender
-        data?["homeless"] = homeless
-        data?["insurance"] = insurance
+        data["DOB"] = Birth.text
+        data["BirthCity"] = CityBorn.text
+        data["LastName"] = LettersLN.text
+        data["NEXID"] = NEXID.text
+        data["Zip"] = ZIP.text
+        data["SexAtBirth"] = sexatbirth
+        data["Gender"] = gender
+        data["Homeless"] = homeless
+        data["HealthInsurance"] = insurance
         return true
     }
     
@@ -119,12 +119,29 @@ class PersonalVIew : UIViewController, UIScrollViewDelegate,UIPickerViewDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        Eity = []
-        Rac = []
+        Eity = ["Cupertino","Sunnyvale","Santa Clara","San jose","Mountain View"]
+        Rac = ["Cupertino","Sunnyvale","Santa Clara","San jose","Mountain View"]
         self.Ethnicity.delegate = self
         self.Ethnicity.dataSource = self
         self.Race.delegate = self
         self.Race.dataSource = self
+        
+        for button in SexAtBirth{
+            button.isMultipleSelectionEnabled = true
+        }
+        for button in Gender{
+            button.isMultipleSelectionEnabled = true
+        }
+        
+        for button in Homeless{
+            button.isMultipleSelectionEnabled = true
+        }
+        
+        for button in Insurance{
+            button.isMultipleSelectionEnabled = true
+        }
+        
+        
         
     }
     
@@ -153,5 +170,5 @@ class PersonalVIew : UIViewController, UIScrollViewDelegate,UIPickerViewDelegate
         }
         
     }
-    var data : Dictionary<String,Any>?
+    public var data : Dictionary<String,String> = [:]
 }

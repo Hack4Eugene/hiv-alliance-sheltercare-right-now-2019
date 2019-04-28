@@ -22,13 +22,17 @@
 		A39A985C227435500067026D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39A985B227435500067026D /* HomeView.swift */; };
 		A39A985E22743C480067026D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39A985D22743C480067026D /* LoginView.swift */; };
 		A39A986122743FF60067026D /* HistoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A39A986022743FF60067026D /* HistoryView.xib */; };
-		A3C0F3902275AB1E008D02E4 /* DLRadioButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3C0F38D2275AB12008D02E4 /* DLRadioButton.framework */; };
-		A3C0F3912275AB27008D02E4 /* DLRadioButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3C0F38D2275AB12008D02E4 /* DLRadioButton.framework */; };
-		A3C0F3922275AB27008D02E4 /* DLRadioButton.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A3C0F38D2275AB12008D02E4 /* DLRadioButton.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A3C0F3962275AEFA008D02E4 /* LastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0F3952275AEFA008D02E4 /* LastView.swift */; };
 		A3F9CD32227446470064F401 /* ModifyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F9CD31227446470064F401 /* ModifyView.swift */; };
 		A3F9CD3C2274C79E0064F401 /* StaffView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F9CD3B2274C79E0064F401 /* StaffView.swift */; };
 		A3F9CD402274F02A0064F401 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F9CD3F2274F02A0064F401 /* HistoryView.swift */; };
+		BE29E4BF2275BB4A00CD89F0 /* DLRadioButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE29E4BC2275BB2700CD89F0 /* DLRadioButton.framework */; };
+		BE29E4C02275BB4F00CD89F0 /* DLRadioButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE29E4BC2275BB2700CD89F0 /* DLRadioButton.framework */; };
+		BE29E4C12275BB4F00CD89F0 /* DLRadioButton.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE29E4BC2275BB2700CD89F0 /* DLRadioButton.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE29E4CC2275D38900CD89F0 /* Sqlite.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE29E4CB2275D38900CD89F0 /* Sqlite.swift */; };
+		BE29E5132275D45200CD89F0 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE29E5062275D44800CD89F0 /* SQLite.framework */; };
+		BE29E5142275D45700CD89F0 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE29E5062275D44800CD89F0 /* SQLite.framework */; };
+		BE29E5152275D45700CD89F0 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE29E5062275D44800CD89F0 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,40 +50,82 @@
 			remoteGlobalIDString = A39A982422741D0D0067026D;
 			remoteInfo = "HIV Alliance";
 		};
-		A3C0F38C2275AB12008D02E4 /* PBXContainerItemProxy */ = {
+		BE29E4BB2275BB2700CD89F0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A3C0F3862275AB12008D02E4 /* DLRadioButton.xcodeproj */;
+			containerPortal = BE29E4B52275BB2700CD89F0 /* DLRadioButton 03-40-42-312.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 634D5B5A1C5D8B0F00A3740D;
 			remoteInfo = DLRadioButton;
 		};
-		A3C0F38E2275AB12008D02E4 /* PBXContainerItemProxy */ = {
+		BE29E4BD2275BB2700CD89F0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A3C0F3862275AB12008D02E4 /* DLRadioButton.xcodeproj */;
+			containerPortal = BE29E4B52275BB2700CD89F0 /* DLRadioButton 03-40-42-312.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 636C50241C5D9315008B5C96;
 			remoteInfo = DLRadioButtonTests;
 		};
-		A3C0F3932275AB27008D02E4 /* PBXContainerItemProxy */ = {
+		BE29E4C22275BB4F00CD89F0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A3C0F3862275AB12008D02E4 /* DLRadioButton.xcodeproj */;
+			containerPortal = BE29E4B52275BB2700CD89F0 /* DLRadioButton 03-40-42-312.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 634D5B591C5D8B0F00A3740D;
 			remoteInfo = DLRadioButton;
 		};
-		A3EC52112275AAC700C6C7FB /* PBXContainerItemProxy */ = {
+		BE29E5052275D44800CD89F0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A3EC520B2275AAC700C6C7FB /* DLRadioButton.xcodeproj */;
+			containerPortal = BE29E4CD2275D44100CD89F0 /* SQLite.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 634D5B5A1C5D8B0F00A3740D;
-			remoteInfo = DLRadioButton;
+			remoteGlobalIDString = EE247AD31C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
 		};
-		A3EC52132275AAC700C6C7FB /* PBXContainerItemProxy */ = {
+		BE29E5072275D44800CD89F0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A3EC520B2275AAC700C6C7FB /* DLRadioButton.xcodeproj */;
+			containerPortal = BE29E4CD2275D44100CD89F0 /* SQLite.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 636C50241C5D9315008B5C96;
-			remoteInfo = DLRadioButtonTests;
+			remoteGlobalIDString = EE247ADD1C3F04ED00AE3E12;
+			remoteInfo = "SQLiteTests iOS";
+		};
+		BE29E5092275D44800CD89F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE29E4CD2275D44100CD89F0 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B3C1C3F3ED000AE3E12;
+			remoteInfo = "SQLite Mac";
+		};
+		BE29E50B2275D44800CD89F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE29E4CD2275D44100CD89F0 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B451C3F3ED000AE3E12;
+			remoteInfo = "SQLiteTests Mac";
+		};
+		BE29E50D2275D44800CD89F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE29E4CD2275D44100CD89F0 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E5A1C6BB0F50062603F;
+			remoteInfo = "SQLite tvOS";
+		};
+		BE29E50F2275D44800CD89F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE29E4CD2275D44100CD89F0 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E631C6BB0F60062603F;
+			remoteInfo = "SQLiteTests tvOS";
+		};
+		BE29E5112275D44800CD89F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE29E4CD2275D44100CD89F0 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A121AC451CA35C79005A31D1;
+			remoteInfo = "SQLite watchOS";
+		};
+		BE29E5162275D45700CD89F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE29E4CD2275D44100CD89F0 /* SQLite.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EE247AD21C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -90,7 +136,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A3C0F3922275AB27008D02E4 /* DLRadioButton.framework in Embed Frameworks */,
+				BE29E5152275D45700CD89F0 /* SQLite.framework in Embed Frameworks */,
+				BE29E4C12275BB4F00CD89F0 /* DLRadioButton.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -120,12 +167,13 @@
 		A39A985B227435500067026D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A39A985D22743C480067026D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		A39A986022743FF60067026D /* HistoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryView.xib; sourceTree = "<group>"; };
-		A3C0F3862275AB12008D02E4 /* DLRadioButton.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DLRadioButton.xcodeproj; path = DLRadioButton/DLRadioButton.xcodeproj; sourceTree = "<group>"; };
 		A3C0F3952275AEFA008D02E4 /* LastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastView.swift; sourceTree = "<group>"; };
-		A3EC520B2275AAC700C6C7FB /* DLRadioButton.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DLRadioButton.xcodeproj; path = DLRadioButton/DLRadioButton.xcodeproj; sourceTree = "<group>"; };
 		A3F9CD31227446470064F401 /* ModifyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyView.swift; sourceTree = "<group>"; };
 		A3F9CD3B2274C79E0064F401 /* StaffView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffView.swift; sourceTree = "<group>"; };
 		A3F9CD3F2274F02A0064F401 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		BE29E4B52275BB2700CD89F0 /* DLRadioButton 03-40-42-312.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "DLRadioButton 03-40-42-312.xcodeproj"; path = "DLRadioButton/DLRadioButton 03-40-42-312.xcodeproj"; sourceTree = "<group>"; };
+		BE29E4CB2275D38900CD89F0 /* Sqlite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sqlite.swift; sourceTree = "<group>"; };
+		BE29E4CD2275D44100CD89F0 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,8 +181,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3C0F3912275AB27008D02E4 /* DLRadioButton.framework in Frameworks */,
-				A3C0F3902275AB1E008D02E4 /* DLRadioButton.framework in Frameworks */,
+				BE29E5132275D45200CD89F0 /* SQLite.framework in Frameworks */,
+				BE29E4C02275BB4F00CD89F0 /* DLRadioButton.framework in Frameworks */,
+				BE29E5142275D45700CD89F0 /* SQLite.framework in Frameworks */,
+				BE29E4BF2275BB4A00CD89F0 /* DLRadioButton.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,17 +205,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4C99AB0B227554E4003AC673 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
 		4C99AB1B22758E21003AC673 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A3EC520B2275AAC700C6C7FB /* DLRadioButton.xcodeproj */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -173,8 +215,9 @@
 		A39A981C22741D0D0067026D = {
 			isa = PBXGroup;
 			children = (
-				A3C0F3862275AB12008D02E4 /* DLRadioButton.xcodeproj */,
-				4C99AB0B227554E4003AC673 /* Service */,
+				BE29E4CD2275D44100CD89F0 /* SQLite.xcodeproj */,
+				BE29E4C62275D2A000CD89F0 /* Service */,
+				BE29E4B52275BB2700CD89F0 /* DLRadioButton 03-40-42-312.xcodeproj */,
 				A39A985F22743EEA0067026D /* CustomCell */,
 				A39A985822742CDA0067026D /* View Controller */,
 				A39A982722741D0D0067026D /* HIV Alliance */,
@@ -253,20 +296,33 @@
 			path = CustomCell;
 			sourceTree = "<group>";
 		};
-		A3C0F3872275AB12008D02E4 /* Products */ = {
+		BE29E4B62275BB2700CD89F0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A3C0F38D2275AB12008D02E4 /* DLRadioButton.framework */,
-				A3C0F38F2275AB12008D02E4 /* DLRadioButtonTests.xctest */,
+				BE29E4BC2275BB2700CD89F0 /* DLRadioButton.framework */,
+				BE29E4BE2275BB2700CD89F0 /* DLRadioButtonTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A3EC520C2275AAC700C6C7FB /* Products */ = {
+		BE29E4C62275D2A000CD89F0 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				A3EC52122275AAC700C6C7FB /* DLRadioButton.framework */,
-				A3EC52142275AAC700C6C7FB /* DLRadioButtonTests.xctest */,
+				BE29E4CB2275D38900CD89F0 /* Sqlite.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BE29E4FC2275D44800CD89F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE29E5062275D44800CD89F0 /* SQLite.framework */,
+				BE29E5082275D44800CD89F0 /* SQLiteTests iOS.xctest */,
+				BE29E50A2275D44800CD89F0 /* SQLite.framework */,
+				BE29E50C2275D44800CD89F0 /* SQLiteTests Mac.xctest */,
+				BE29E50E2275D44800CD89F0 /* SQLite.framework */,
+				BE29E5102275D44800CD89F0 /* SQLiteTests tvOS.xctest */,
+				BE29E5122275D44800CD89F0 /* SQLite.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -286,7 +342,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				A3C0F3942275AB27008D02E4 /* PBXTargetDependency */,
+				BE29E4C32275BB4F00CD89F0 /* PBXTargetDependency */,
+				BE29E5172275D45700CD89F0 /* PBXTargetDependency */,
 			);
 			name = "HIV Alliance";
 			productName = "HIV Alliance";
@@ -366,12 +423,12 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = A3C0F3872275AB12008D02E4 /* Products */;
-					ProjectRef = A3C0F3862275AB12008D02E4 /* DLRadioButton.xcodeproj */;
+					ProductGroup = BE29E4B62275BB2700CD89F0 /* Products */;
+					ProjectRef = BE29E4B52275BB2700CD89F0 /* DLRadioButton 03-40-42-312.xcodeproj */;
 				},
 				{
-					ProductGroup = A3EC520C2275AAC700C6C7FB /* Products */;
-					ProjectRef = A3EC520B2275AAC700C6C7FB /* DLRadioButton.xcodeproj */;
+					ProductGroup = BE29E4FC2275D44800CD89F0 /* Products */;
+					ProjectRef = BE29E4CD2275D44100CD89F0 /* SQLite.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -384,32 +441,67 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		A3C0F38D2275AB12008D02E4 /* DLRadioButton.framework */ = {
+		BE29E4BC2275BB2700CD89F0 /* DLRadioButton.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = DLRadioButton.framework;
-			remoteRef = A3C0F38C2275AB12008D02E4 /* PBXContainerItemProxy */;
+			remoteRef = BE29E4BB2275BB2700CD89F0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		A3C0F38F2275AB12008D02E4 /* DLRadioButtonTests.xctest */ = {
+		BE29E4BE2275BB2700CD89F0 /* DLRadioButtonTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = DLRadioButtonTests.xctest;
-			remoteRef = A3C0F38E2275AB12008D02E4 /* PBXContainerItemProxy */;
+			remoteRef = BE29E4BD2275BB2700CD89F0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		A3EC52122275AAC700C6C7FB /* DLRadioButton.framework */ = {
+		BE29E5062275D44800CD89F0 /* SQLite.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = DLRadioButton.framework;
-			remoteRef = A3EC52112275AAC700C6C7FB /* PBXContainerItemProxy */;
+			path = SQLite.framework;
+			remoteRef = BE29E5052275D44800CD89F0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		A3EC52142275AAC700C6C7FB /* DLRadioButtonTests.xctest */ = {
+		BE29E5082275D44800CD89F0 /* SQLiteTests iOS.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = DLRadioButtonTests.xctest;
-			remoteRef = A3EC52132275AAC700C6C7FB /* PBXContainerItemProxy */;
+			path = "SQLiteTests iOS.xctest";
+			remoteRef = BE29E5072275D44800CD89F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BE29E50A2275D44800CD89F0 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = BE29E5092275D44800CD89F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BE29E50C2275D44800CD89F0 /* SQLiteTests Mac.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests Mac.xctest";
+			remoteRef = BE29E50B2275D44800CD89F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BE29E50E2275D44800CD89F0 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = BE29E50D2275D44800CD89F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BE29E5102275D44800CD89F0 /* SQLiteTests tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests tvOS.xctest";
+			remoteRef = BE29E50F2275D44800CD89F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BE29E5122275D44800CD89F0 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = BE29E5112275D44800CD89F0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -458,6 +550,7 @@
 				A30A92E42274F2C800580C13 /* TestingView.swift in Sources */,
 				A39A985E22743C480067026D /* LoginView.swift in Sources */,
 				A39A982922741D0D0067026D /* AppDelegate.swift in Sources */,
+				BE29E4CC2275D38900CD89F0 /* Sqlite.swift in Sources */,
 				A30A92E02274F27900580C13 /* StaffInforView.swift in Sources */,
 				A30A92E62274F2D700580C13 /* SupplementView.swift in Sources */,
 			);
@@ -492,10 +585,15 @@
 			target = A39A982422741D0D0067026D /* HIV Alliance */;
 			targetProxy = A39A984522741D0E0067026D /* PBXContainerItemProxy */;
 		};
-		A3C0F3942275AB27008D02E4 /* PBXTargetDependency */ = {
+		BE29E4C32275BB4F00CD89F0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DLRadioButton;
-			targetProxy = A3C0F3932275AB27008D02E4 /* PBXContainerItemProxy */;
+			targetProxy = BE29E4C22275BB4F00CD89F0 /* PBXContainerItemProxy */;
+		};
+		BE29E5172275D45700CD89F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SQLite iOS";
+			targetProxy = BE29E5162275D45700CD89F0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -638,6 +736,7 @@
 		A39A984E22741D0E0067026D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -659,6 +758,7 @@
 		A39A984F22741D0E0067026D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;

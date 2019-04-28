@@ -49,10 +49,10 @@ class StaffInforView : UIViewController, UIScrollViewDelegate,UIPickerViewDelega
                 location = lo.currentTitle!
             }
         }
-        data?["encounterdate"] = Date.text
-        data?["initial"] = Initials.text
-        data?["city"] = CityV
-        data?["location"] = location
+        data["EncounterDate"] = Date.text!
+        //data?["Initial"] = Initials.text
+        //data?["BirthCity"] = CityV
+        data["Location"] = location
         return true
     }
     
@@ -64,9 +64,12 @@ class StaffInforView : UIViewController, UIScrollViewDelegate,UIPickerViewDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        CityData = []
+        CityData = ["San jose","New York","Eugene","Portland"]
         self.City.delegate = self
         self.City.dataSource = self
+        for button in self.Location{
+            button.isMultipleSelectionEnabled = true
+        }
 
         
     }
@@ -97,7 +100,8 @@ class StaffInforView : UIViewController, UIScrollViewDelegate,UIPickerViewDelega
         }
 
     }
-        var data : Dictionary<String,Any>?
+    public var data : Dictionary<String,String> = [:]
+    
 }
 
 

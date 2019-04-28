@@ -11,20 +11,64 @@ import UIKit
 import DLRadioButton
 class SupplementView : UIViewController, UIScrollViewDelegate{
     
-    @IBOutlet var button:
-        [DLRadioButton]!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        for i in Witness{
+            i.isMultipleSelectionEnabled = true
+        }
+        for i in condition{
+            i.isMultipleSelectionEnabled = true
+        }
+        for i in exchanged{
+            i.isMultipleSelectionEnabled = true
+        }
+        for i in food{
+            i.isMultipleSelectionEnabled = true
+        }
+        for i in needles{
+            i.isMultipleSelectionEnabled = true
+        }
+    }
+    @IBOutlet var Witness: [DLRadioButton]!
+    @IBOutlet var condition : [DLRadioButton]!
+    @IBOutlet var exchanged : [DLRadioButton]!
+    @IBOutlet var food : [DLRadioButton]!
+    @IBOutlet var needles : [DLRadioButton]!
     
     func checkifNext()->Bool{
-        var supplement : String?
-        for supply in button{
-            if (supply.isSelected){
-                supplement = supply.currentTitle
-                return false
+        var witness : String?
+        var Condition : String?
+        var Exchanged : String?
+        var Needles : String?
+        
+        for wt in Witness{
+            if (wt.isSelected){
+                witness = wt.currentTitle
             }
         }
-            data?["supplemental"] = supplement
-            return true
+        for cd in condition{
+            if (cd.isSelected){
+                Condition = cd.currentTitle
+            }
+        }
+        for exc in exchanged{
+            if (exc.isSelected){
+                Exchanged = exc.currentTitle
+            }
+        }
+        
+        for nd in needles{
+            if (nd.isSelected){
+                Needles = nd.currentTitle
+            }
+        }
+        data["WitnessedOD"] = witness
+        data["MedicalCondition"] = Condition
+        data["ExchangedPreviously"] = Exchanged
+        //data?["supplemental"] = Food
+        data["ExchangingForOthers"] = Needles
+        return true
     }
     
     @IBAction func Exit(_ sender: Any) {
@@ -39,7 +83,7 @@ class SupplementView : UIViewController, UIScrollViewDelegate{
     }
     
     @IBAction func Next(_ sender: Any) {
-        if(self.checkifNext()){
+        if(checkifNext()){
             self.performSegue(withIdentifier: "toNext", sender: self)
         }
         else{
@@ -51,12 +95,12 @@ class SupplementView : UIViewController, UIScrollViewDelegate{
         if segue.identifier == "toNext" {
             let nav = segue.destination as! UINavigationController
             let viewController = nav.topViewController as!
-            SupplementView
+            InventoryView
             viewController.data = data
         }
         
     }
-    var data : Dictionary<String,Any>?
+    public var data : Dictionary<String,String> = [:]
 }
 
 

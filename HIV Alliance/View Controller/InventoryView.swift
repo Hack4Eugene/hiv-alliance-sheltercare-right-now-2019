@@ -25,12 +25,12 @@ class InventoryView : UIViewController, UIScrollViewDelegate{
             return false
         }
         
-        data?["syringesin"] = Syringesin.text
-        data?["syringesout"] = SyringesOut.text
-        data?["sharps"] = Sharps.text
-        data?["alcohol"] = Alcohol.text
-        data?["condom"] = Condoms.text
-        data?["cottons"] = Cottons.text
+        data["SyringesIN"] = Syringesin.text!
+        data["SyringesOUT"] = SyringesOut.text!
+        data["Sharps"] = Sharps.text!
+        data["Alcohol"] = Alcohol.text!
+        data["Condoms"] = Condoms.text!
+        data["Cotton"] = Cottons.text!
         return true
     }
     func resetForm(){
@@ -42,7 +42,7 @@ class InventoryView : UIViewController, UIScrollViewDelegate{
     
     @IBAction func Done(_ sender: Any) {
         if(self.checkifNext()){
-            
+            Sqlite.shared.insert(dataDict: data)
         }
         else{
             self.resetForm()
@@ -61,5 +61,5 @@ class InventoryView : UIViewController, UIScrollViewDelegate{
         }
         
     }
-    var data : Dictionary<String,Any>?
+    public var data : Dictionary<String,String> = [:]
 }

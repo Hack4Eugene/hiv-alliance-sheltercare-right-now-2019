@@ -12,20 +12,45 @@ import DLRadioButton
 
 class TestingView : UIViewController, UIScrollViewDelegate{
     
-    @IBOutlet var Tests:
-        [DLRadioButton]!
-    
+    @IBOutlet var SharedNeedle: [DLRadioButton]!
+    @IBOutlet var LastTime:[DLRadioButton]!
+    @IBOutlet var HEPC:[DLRadioButton]!
+    @IBOutlet var SafeInject : [DLRadioButton]!
+    @IBOutlet var Detox:[DLRadioButton]!
     
     func checkifNext()->Bool{
-        var test : String?
+        var sharedneedle : String?
+        var lasttime : String?
+        var hepc : String?
+        var detox: String?
         
-        for Test in Tests{
-            if(Test.isSelected){
-                test = Test.currentTitle
-                return false
+        for sd in SharedNeedle{
+            if (sd.isSelected){
+                sharedneedle = sd.currentTitle
             }
         }
-        data?["test"] = test
+        for lt in LastTime{
+            if (lt.isSelected){
+                lasttime = lt.currentTitle
+            }
+        }
+        for hep in HEPC{
+            if (hep.isSelected){
+                hepc = hep.currentTitle
+            }
+        }
+        for det in Detox{
+            if (det.isSelected){
+                detox = det.currentTitle
+            }
+        }
+
+        data["SharedNeedle"] = sharedneedle!
+        data["LastHIVTest"] = lasttime!
+        //data?["MedicalCondition"] = safeinject
+        data["LastHEPCTest"] = hepc!
+        data["Detox"] = detox!
+        
         return true
     }
     
@@ -62,5 +87,5 @@ class TestingView : UIViewController, UIScrollViewDelegate{
         }
         
     }
-    var data : Dictionary<String,Any>?
+    public var data : Dictionary<String,String> = [:]
 }
